@@ -64,13 +64,13 @@ img {
     font-size: 18px;
     border-radius: 10px;
     border: none;
-    box-shadow: 0 3px #CEC5BA;
+    box-shadow: 0 2px #CEC5BA;
 }
 
 .btn:hover {
     background: #CEC5BA;
     color: #1D3557;
-    box-shadow: 0 3px #1D3557;
+    box-shadow: 0 2px #1D3557;
     transition: all 0.1s ease;
     cursor: pointer;
 }
