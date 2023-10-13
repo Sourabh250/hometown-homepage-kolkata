@@ -1,0 +1,257 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    color: #1D3557;
+    font-size: 16px;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+#hero-section {
+    background-image: url("images/kolkata1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-text-1 {
+    color: #FFFFFF;
+    padding: 4px 12px;
+    background: #1D3557;
+    font-size: 32px;
+    border-radius: 10px;
+}
+
+#hero-text-2 {
+    color: #FFFFFF;
+    background: #457B9D;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 412px;
+    padding: 6px 28px;
+}
+
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: #FFFFFF;
+    padding: 10px 35px;
+    background: #1D3557;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px #CEC5BA;
+}
+
+.btn:hover {
+    background: #CEC5BA;
+    color: #1D3557;
+    box-shadow: 0 3px #1D3557;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+#activities-section {
+    background: linear-gradient( #CEC5BA, #9ABDB7);
+     height: 380px;
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+}
+
+.activities-container {
+    margin-top: 55px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.activities-header {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+.activities-img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.activities-img:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.row {
+    width: 200px;
+    padding: 10px;
+}
+
+
+
+.row-header {
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+
+.history-section {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(#9ABDB7, #edede9);
+}
+
+.history-header {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 400px;
+    height: 7px;
+    border-top: 2px solid #1D3557;
+    border-bottom: 2px solid #1D3557;
+    margin-bottom: 40px;
+}
+
+#guide-section {
+    height: 395px;
+    background: #edede9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.guide-container {
+    background: #A8DADC;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 12px;
+    box-shadow: 0 6px #1D3557;
+    border-radius: 10px;
+}
+
+#avatar-img {
+    width: 180px;
+}
+
+.guide-section-paragraph {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+
+
+@media (max-width: 850px) {
+    #hero-section {
+        background-position: center;
+        height: 400px;
+    }
+
+    #hero-text-1 {
+        font-size: 24px;
+        padding: 2px 10px;
+    }
+
+    #hero-text-2 {
+        font-size: 14px; 
+        width: 300px;
+        padding: 4px 12px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    #activities-section {
+        height: auto; 
+    }
+
+    .activities-container {
+        flex-direction: column;
+    }
+
+    .activities-header {
+        font-size: 20px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    .activities-img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .history-section {
+        height: auto;
+        background: linear-gradient(#9ABDB7, #A8DADC);
+    }
+
+    .history-header {
+        font-size: 20px;
+    }
+
+    .line {
+        width: 50%;
+    }
+
+    #guide-section {
+        height: auto;
+    }
+
+    .guide-container {
+        width: 100%;
+    }
+
+    #avatar-img {
+        width: 140px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 851px) {
+.guide-container:hover {
+    background: #CEC5BA;
+    box-shadow: 0 6px #9ABDB7;
+    transition: all 0.2s ease;
+}
+}
