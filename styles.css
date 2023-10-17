@@ -186,6 +186,32 @@ h3 {
     margin-bottom: 26px;
 }
 
+#footer-section {
+    padding: 40px 0;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.footer-text {
+    font-size: 18px;
+}
 
 @media (max-width: 850px) {
     #hero-section {
@@ -249,19 +275,32 @@ h3 {
 
     .guide-container {
         width: 100%;
+        box-shadow: none;
     }
 
     #avatar-img {
         width: 140px;
         margin-right: 10px;
     }
+
+    #footer-section {
+        background: linear-gradient(#A8DADC, #edede9);
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 851px) {
-.guide-container:hover {
-    background: #CEC5BA;
-    box-shadow: 0 6px #9ABDB7;
-    transition: all 0.2s ease;
-}
+    .guide-container:hover {
+        background: #CEC5BA;
+        box-shadow: 0 6px #9ABDB7;
+        transition: all 0.2s ease;
+    }
+
+    #footer-section {
+        background: linear-gradient(#edede9, #9ABDB7);
+    }
 
 }
